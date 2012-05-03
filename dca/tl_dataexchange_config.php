@@ -118,7 +118,7 @@ $GLOBALS['TL_DCA']['tl_dataexchange_config'] = array
 	(
 		'__selector__'				=> array('exportType', 'exportToFile'),
 		'default'					=> '{config_legend},name,tableName,exportType',
-		'csv'						=> '{config_legend},name,addExportInDCA,tableName,exportType;{csv_legend},exportCSVSeparator,exportCSVExcel,includeHeader;{expert_legend:hide},sqlWhere;{output_legend},prependString,exportToFile'
+		'csv'						=> '{config_legend},name,addExportInDCA,tableName,exportType;{csv_legend},exportCSVSeparator,exportCSVExcel,includeHeader;{expert_legend:hide},sqlWhere,sqlOrderBy;{output_legend},prependString,exportToFile'
 	),
 	
 	// Subpalettes
@@ -194,7 +194,13 @@ $GLOBALS['TL_DCA']['tl_dataexchange_config'] = array
 			'inputType'				=> 'text',
 			'eval'					=> array('maxlength'=>255, 'decodeEntities'=>true, 'tl_class'=>'long'),
 		),
-		
+		'sqlOrderBy' => array
+		(
+			'label'					=> &$GLOBALS['TL_LANG']['tl_dataexchange_config']['sqlOrderBy'],
+			'exclude'				=> true,
+			'inputType'				=> 'text',
+			'eval'					=> array('maxlength'=>255, 'decodeEntities'=>true, 'tl_class'=>'long'),
+		),		
 		'prependString' => array
 		(
 			'label'					=> &$GLOBALS['TL_LANG']['tl_dataexchange_config']['prependString'],
