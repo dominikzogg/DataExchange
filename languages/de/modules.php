@@ -31,4 +31,4 @@
 /**
  * Back end modules
  */
-$GLOBALS['TL_LANG']['MOD']['dataexchange_config'] = array('DataExchange', 'Configure DataExchange and export data');
+$GLOBALS['TL_LANG']['MOD']['dataexchange_config'] = array('Datenaustausch', 'Datenaustausch konfigurieren und Daten exportieren.');

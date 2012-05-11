@@ -7,9 +7,9 @@
 -- *                                                        *
 -- **********************************************************
 
--- 
+--
 -- Table `tl_dataexchange_config`
--- 
+--
 
 CREATE TABLE `tl_dataexchange_config` (
   `id` int(10) unsigned NOT NULL auto_increment,
@@ -31,9 +31,9 @@ CREATE TABLE `tl_dataexchange_config` (
 
 -- --------------------------------------------------------
 
--- 
+--
 -- Table `tl_dataexchange_fields`
--- 
+--
 
 CREATE TABLE `tl_dataexchange_fields` (
   `id` int(10) unsigned NOT NULL auto_increment,

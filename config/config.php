@@ -10,12 +10,12 @@
  * modify it under the terms of the GNU Lesser General Public
  * License as published by the Free Software Foundation, either
  * version 3 of the License, or (at your option) any later version.
- * 
+ *
  * This program is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
  * Lesser General Public License for more details.
- * 
+ *
  * You should have received a copy of the GNU Lesser General Public
  * License along with this program. If not, please visit the Free
  * Software Foundation website at <http://www.gnu.org/licenses/>.
@@ -29,13 +29,13 @@
 
 
 /**
- * Backend modules
+ * Back end modules
  */
 $GLOBALS['BE_MOD']['system']['dataexchange_config'] = array
 (
 	'tables'	=> array('tl_dataexchange_config', 'tl_dataexchange_fields'),
 	'icon'		=> 'system/modules/DataExchange/html/icon.png',
-	'export'	=> array('DataExchange','exportTable'),
+	'export'	=> array('DataExchange', 'exportTable')
 );
 
 
@@ -48,5 +48,4 @@ $GLOBALS['TL_HOOKS']['loadDataContainer'][] = array('DataExchange', 'loadDataCon
 /**
  * Data Exchange providers
  */
-$GLOBALS['DataExchangeProvider']['export']['csv'] = array('DataExchangeExportProvider_CSV','exportData');
-
+$GLOBALS['DataExchangeProvider']['export']['csv'] = array('DataExchangeExportProvider_CSV', 'exportData');

@@ -2,7 +2,7 @@
 
 /**
  * Contao Open Source CMS
- * Copyright © 2005-2011 Leo Feyer
+ * Copyright (C) 2005-2011 Leo Feyer
  *
  * Formerly known as TYPOlight Open Source CMS.
  *
@@ -22,13 +22,13 @@
  *
  * PHP version 5
  * @copyright  Stefan Lindecke 2012
- * @author     Stefan Lindecke <stefan@chektrion.de>
  * @author     Andreas Schempp <andreas@schempp.ch>
  * @license    http://opensource.org/licenses/lgpl-3.0.html
  */
 
 
 /**
- * Back end modules
+ * Errors
  */
-$GLOBALS['TL_LANG']['MOD']['dataexchange_config'] = array('DataExchange', 'Configure DataExchange and export data');
+$GLOBALS['TL_LANG']['ERR']['deFieldEmpty'] = 'Bitte wählen Sie ein DCA-Feld oder geben Sie einen benutzerdefinierten SQL Query ein.';
+

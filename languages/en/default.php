@@ -30,5 +30,5 @@
 /**
  * Errors
  */
-$GLOBALS['TL_LANG']['ERR']['deFieldEmpty'] = 'You must select a DCA field or enter a query.';
+$GLOBALS['TL_LANG']['ERR']['deFieldEmpty'] = 'You must select a DCA field or enter a SQL query.';
 
