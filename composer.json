@@ -28,7 +28,7 @@
 	"extra": {
 		"contao": {
 			"symlinks": {
-				"./": "system/modules/dataexchange"
+				"./": "system/modules/DataExchange"
 			}
 		}
 	}
