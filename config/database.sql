@@ -49,3 +49,12 @@ CREATE TABLE `tl_dataexchange_fields` (
   KEY `pid` (`pid`),
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
+-- --------------------------------------------------------
+
+--
+-- Table `tl_module`
+--
+
+CREATE TABLE `tl_module` (
+  `dataexchange_configs` blob NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;

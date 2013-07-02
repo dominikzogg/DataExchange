@@ -30,11 +30,27 @@
 
 class DataExchange extends Backend
 {
-	public function exportTable(DataContainer $dc)
+
+	/**
+	 * Export the table from backend
+	 * @param DataContainer
+	 */
+	public function exportBackendTable(DataContainer $dc)
+	{
+		$this->exportTable(($this->Input->get('return') == '' ? $dc->id : $this->Input->get('id')));
+	}
+
+
+	/**
+	 * Export the table of particular config
+	 * @param integer
+	 * @param boolean
+	 */
+	public function exportTable($intId, $blnForceDownload=false)
 	{
 		$objConfig = $this->Database->prepare("SELECT * FROM tl_dataexchange_config WHERE id=?")
 								 	->limit(1)
-									->execute(($this->Input->get('return') == '' ? $dc->id : $this->Input->get('id')));
+									->execute($intId);
 
 		if ($objConfig->numRows < 1)
 		{
@@ -101,7 +117,7 @@ class DataExchange extends Backend
 		$objCSV->excel = $objConfig->exportCSVExcel;
 		$objCSV->content = $arrData;
 
-		if ($objConfig->exportToFile)
+		if ($objConfig->exportToFile && !$blnForceDownload)
 		{
 			$strStoreDir = $objConfig->storeDir;
 

@@ -24,6 +24,7 @@
  * @copyright  Stefan Lindecke 2012
  * @author     Stefan Lindecke <stefan@chektrion.de>
  * @author     Andreas Schempp <andreas@schempp.ch>
+ * @author     Kamil Kuzminski <kamil.kuzminski@codefog.pl>
  * @license    http://opensource.org/licenses/lgpl-3.0.html
  */
 
@@ -35,8 +36,14 @@ $GLOBALS['BE_MOD']['system']['dataexchange_config'] = array
 (
 	'tables'	=> array('tl_dataexchange_config', 'tl_dataexchange_fields'),
 	'icon'		=> 'system/modules/DataExchange/html/icon.png',
-	'export'	=> array('DataExchange', 'exportTable')
+	'export'	=> array('DataExchange', 'exportBackendTable')
 );
+
+
+/**
+ * Front end modules
+ */
+$GLOBALS['FE_MOD']['miscellaneous']['dataexchange'] = 'ModuleDataExchange';
 
 
 /**
