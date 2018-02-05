@@ -3,7 +3,7 @@
 	"type": "contao-module",
 	"description": "A DataExchange extension for the Contao CMS",
 	"keywords": ["contao", "dataexchange", "data exchange"],
-	"license": "LGPLv3",
+	"license": "LGPL-3.0-or-later",
 	"authors": [
 		{
 			"name": "Stefan Lindecke",
